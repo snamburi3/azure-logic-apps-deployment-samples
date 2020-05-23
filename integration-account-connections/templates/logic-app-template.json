@@ -38,7 +38,7 @@
   "variables": {
     "location": "[resourceGroup().location]",
     "baseName": "[concat(parameters('groupId'), parameters('environment'))]",
-    "sharedResourceGroupName": "[toLower(concat(variables('baseName'), 'rgp', variables('location'), '-shared'))]",
+    "sharedResourceGroupName": "[toLower(variables('baseName')]",
     "integrationAccountName": "[toLower(concat(variables('baseName'), 'iact', parameters('locationName')))]",
     "instance": "[if(equals(parameters('instance'), 1), '', concat('-', sub(parameters('instance'), 1)))]",
     "logicAppName": "[toLower(concat(variables('baseName'), 'la', parameters('locationName'), '-', parameters('identifier'), variables('instance')))]"
