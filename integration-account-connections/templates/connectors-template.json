@@ -38,7 +38,7 @@
   "variables": {
     "location": "[resourceGroup().location]",
     "baseName": "[concat(parameters('groupId'), parameters('environment'))]",
-    "sharedResourceGroupName": "[toLower(concat(variables('baseName'), 'rgp', variables('location'), '-shared'))]",
+    "sharedResourceGroupName": "[toLower(variables('baseName'))]",
     "baseConnectionsId": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', variables('location'), '/managedApis/')]",
     "integrationAccountName": "[toLower(concat(variables('baseName'), 'iact', parameters('locationName')))]",
     "integrationAccountId": "[resourceId(subscription().subscriptionId, variables('sharedResourceGroupName'), 'Microsoft.Logic/integrationAccounts', variables('integrationAccountName'))]",
