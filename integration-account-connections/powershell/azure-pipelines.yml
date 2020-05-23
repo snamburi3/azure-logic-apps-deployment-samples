@@ -1,6 +1,6 @@
 variables: 
   location: eastus
-  groupId: cse01
+  groupId: ExampleGroup
   abbrevLocationName: eastus
   instanceCount: 1
   identifier: sample-int-account
