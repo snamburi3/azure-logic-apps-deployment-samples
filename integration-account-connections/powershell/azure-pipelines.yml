@@ -1,7 +1,7 @@
 variables: 
-  location: westus
+  location: eastus
   groupId: cse01
-  abbrevLocationName: westus
+  abbrevLocationName: eastus
   instanceCount: 1
   identifier: sample-int-account
   sampleDirectory: integration-account-connections
